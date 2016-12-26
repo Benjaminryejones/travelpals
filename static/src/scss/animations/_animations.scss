@@ -1,0 +1,24 @@
+@mixin keyframes( $animationName... )
+{
+    @-webkit-keyframes $animationName {
+        @content;
+    }
+    @-moz-keyframes $animationName {
+        @content;
+    }
+    @-o-keyframes $animationName {
+        @content;
+    }
+    @keyframes $animationName {
+        @content;
+    }
+}
+
+@keyframes form-fade {
+	0% {color: rgba($white,0);}
+	100% {color: ($white-light);}
+}
+
+.form-fade {
+	@include keyframes(form-fade .5s 1);
+}

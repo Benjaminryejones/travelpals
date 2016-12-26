@@ -1,0 +1,17 @@
+/*** COLORS ***/
+$white: #f7f7f7;
+$white-light: rgba($white,.85);
+$black: #1b1b1b;
+$gray: lighten(#c6c6c6,10);
+$gray-dark: darken($gray, 16);
+$gray-light: lighten($gray, 14);
+$blue: #1575D5;
+$blue-dark: darken($blue, 10);
+$blue-light: lighten($blue, 10);
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

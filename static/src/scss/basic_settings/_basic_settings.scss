@@ -1,0 +1,28 @@
+body {
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	color: $black;
+	margin: 0;
+}
+
+button {
+	border: none;
+	align-self: flex-start;
+}
+
+ul, menu, dir {
+	padding: 0;
+	margin: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.hidden {
+	visibility: hidden;
+}

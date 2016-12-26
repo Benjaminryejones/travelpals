@@ -1,0 +1,51 @@
+{% extends "contents.html" %}
+{% block content %}
+	<div class="home-wrapper">
+		<div class="grid-column">
+			<div class="grid-column">
+				<h1 class="header-text">TRAVEL PALS</h1>
+				<div class="header-hr"></div>
+			</div>
+		</div>
+		<div class="grid-column">
+			<p class="home-text">Travel Pals connects locals and travelers.
+			<br>
+			Meet locals while traveling; show travelers around.</p>
+			<div class="grid-row grid-cell-center">
+				<div id="learn-more-button" class="home-button font-bold">Learn More</div>
+				<div id="contact-button" class="home-button font-bold">Contact</div>
+			</div>
+		</div>
+		<div class="grid-column">
+			<form id="learn-more-form" class="home-form form-fade">
+				<div class="form-row">
+					<label for="name" class="form-label">Name</label>
+					<input id="name" type="text" class="form-input" placeholder="Name">
+				</div>
+				<div class="form-row">
+					<label for="email" class="form-label">Email</label>
+					<input id="email" type="email" class="form-input" placeholder="address@email.com">
+				</div>
+				<div class="form-row">
+					<button class="form-button">Submit</button>
+				</div>
+			</form>
+			<form id="contact-form" class="home-form form-fade">
+				<div class="form-row">
+					<label for="contact-name" class="form-label">Name</label>
+					<input id="contact-name" type="text" class="form-input" placeholder="Name">
+				</div>
+				<div class="form-row">
+					<label for="contact-email" class="form-label">Email</label>
+					<input id="contact-email" type="email" class="form-input" placeholder="address@email.com">
+				</div>
+				<div class="form-row">
+					<textarea id="contact-message" type="email" class="contact-message" placeholder="Your message"></textarea>
+				</div>
+				<div class="form-row">
+					<button class="form-button">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}
